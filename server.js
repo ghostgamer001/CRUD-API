@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const Product = require('./models/productModel')
+const Product = require('./productModel')
 const app = express()
 
 app.use(express.json())
@@ -9,11 +9,11 @@ app.use(express.json())
 //routes
 
 app.get('/', (req, res) => {
-    res.send('Hello NODE API')
+    res.send(' CRUD API')
 })
 
 app.get('/blog', (req, res) => {
-    res.send('Hello Blog, My name is Devtamin')
+    res.send('Hello , My name is Mean')
 })
 
 app.get('/products', async(req, res) => {
